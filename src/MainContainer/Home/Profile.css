@@ -1,5 +1,32 @@
 .background {
-    
+    z-index: -1;
+    background-image: linear-gradient(180deg,
+            rgba(13, 27, 42, 0.973),
+            rgba(254, 254, 255, 0.507)),
+        url(../../assets/Home/bg-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fa {
+    height: 40px;
+    width: 40px;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+    color: var(--white);
+    transform: scale(1, 0.9);
+    transition: ease-in-out 0.5s;
+}
+
+.fa:hover {
+    height: 40px;
+    width: 40px;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+    color: var(--rich-black-fog);
+    transform: scale(1, 0.8);
+    transition: ease-in-out 0.5s;
 }
 
 .profile-container {
@@ -8,16 +35,12 @@
     text-align: center;
     justify-content: center;
     min-height: fit-content;
-    background-color: blue;
-    /* background-image: url(../../assets/Home/bg-img.png); */
-    repeat: none;
-    background-size: cover;
 }
 
 .profile-parent {
     display: flex;
     align-items: center;
-    color: aliceblue;
+    color: black;
 }
 
 .profile-details-name {
@@ -29,4 +52,50 @@
     display: flex;
     flex-direction: column;
     margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1 {
+    font-size: 24px;
+    font-family: Ubuntu;
+}
+
+.primary-text {
+    color: var(--white);
+}
+
+.highlighted-text {
+    color: var(--maize-crayola)
+}
+
+.profile-role-tagline{
+    font-size: 24px;
+    margin: 5px 0 0 0;
+    font-family: "Poppins Light";
+}
+
+.profile-options .highlighted-btn:hover {
+    margin: 0 0 0 28px;
+    background-color: var(--maize-crayola);
+    color: var(--rich-black-fog);
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+    /* border: 1px solid red; */
+}
+
+.profile-picture-background {
+    /* border: 1px solid red; */
+    width: 92%;
+    height: 92%;
+    background-image: url("../../assets/Home/profile-photo-post.jpg");
+    background-size: cover;
+    border-radius: 50%;
 }

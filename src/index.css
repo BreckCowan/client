@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Poppins Medium";
   font-style: normal;
@@ -71,15 +70,15 @@ code {
 }
 
 body ::-webkit-scrollbar-thumb {
-  background-color: hsla(0, 0%, 100%, 0.16);
+  background-color: hsla(0, 0%, 100%, 0.24);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.171);
 }
 
 ::-webkit-scrollbar-track {
-  background: hsla(0, 0%, 100%, 0.1);
+  background: hsla(0, 0%, 100%, 0.11);
 }
 
 .btn {
@@ -97,27 +96,33 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn {
   color: var(--white);
-  border: 2px solid linen;
+  border: 2px solid var(--bdazzled-blue);
   font-size: 12px;
-  background-color: #1f2235;
+  background-color: var(--rich-black-fog);
 }
-/* @media only screen and (max-width: 414px) {
+
+@media only screen and (max-width: 414px) {
   .primary-btn {
     font-size: 13px;
   }
-} */
-
-.primary-btn:hover {
-  color: aliceblue;
-  border: 2px solid #ff5823;
-  background-color: #1f2235;
 }
 
-.highlighted-btn {
-  color: var(--white);
+.primary-btn:hover {
+  color: var(--bdazzled-blue);
+  border: 2px solid var(--white);
+  background-color: var(--rich-black-fog);
+}
 
+.highlighted-btn:hover {
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: var(--maize-crayola);
+}
+.highlighted-btn {
+  color: var(--rich-black-fog);
+  border: 2px solid var(--rich-black-fog);
+  font-size: 12px;
+  background-color: var(--white);
+  margin: 0 0 0 28px;
 }
 
 @media only screen and (max-width: 568px) {
@@ -135,7 +140,3 @@ body ::-webkit-scrollbar-thumb {
   transform: translateY(80px);
   transition: all 0.8s ease;
 }
-
-
-
-
