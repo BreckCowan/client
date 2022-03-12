@@ -2,7 +2,7 @@
     z-index: -1;
     background-image: linear-gradient(180deg,
             rgba(13, 27, 42, 0.973),
-            rgba(254, 254, 255, 0.507)),
+            rgba(254, 254, 255, .7)),
         url(../../assets/Home/bg-img.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,14 +88,21 @@
     height: 380px;
     width: 380px;
     margin: 0 0px 0 100px;
-    /* border: 1px solid red; */
 }
 
 .profile-picture-background {
-    /* border: 1px solid red; */
     width: 92%;
     height: 92%;
     background-image: url("../../assets/Home/profile-photo-post.jpg");
     background-size: cover;
     border-radius: 50%;
+}
+
+.profile-picture-background:hover {
+    width: 92%;
+    height: 92%;
+    background-image: url("../../assets/Home/profile-photo-post.jpg");
+    background-size: cover;
+    border-radius: 50%;
+
 }
