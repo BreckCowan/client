@@ -1,8 +1,8 @@
-import Profile from './MainContainer/Home/Profile';
+import Profile from './MainContainer/Home/Profile/Profile';
 import Projects from './MainContainer/Projects/Projects';
 import AboutMe from './MainContainer/AboutMe/AboutMe'
 import ContactMe from './MainContainer/ContactMe/ContactMe';
-// import Footer from './MainContainer/Footer/Footer';
+import Footer from './MainContainer/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <AboutMe />
       <Projects />
       <ContactMe />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -101,9 +101,15 @@ body ::-webkit-scrollbar-thumb {
   background-color: var(--rich-black-fog);
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 270px) {
   .primary-btn {
     font-size: 13px;
+    display: row;
+  }
+  .highlighted-btn{
+    font-size: 13px;
+    position: auto;
+    display: row;
   }
 }
 
@@ -126,8 +132,16 @@ body ::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 568px) {
+  .primary-btn{
+    z-index: -900;
+  }
   .highlighted-btn {
     z-index: -900;
+  }
+
+  .profile-picture {
+    height: 200px;
+    width: 200px;
   }
 }
 
