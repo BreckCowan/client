@@ -82,11 +82,11 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .btn {
-  border-radius: 50px;
+  border-radius: 5%;
   padding: 14px 0;
   width: 120px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 1.2s;
   font-family: "Poppins SemiBold";
 }
 
