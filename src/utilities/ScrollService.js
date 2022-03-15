@@ -1,4 +1,4 @@
-import { TOTAL_SCREENS } from "./commonUtilities";
+import { TOTAL_SCREENS } from "./CommonUtilities";
 import { Subject } from "rxjs";
 import {object} from "prop-types"
 
