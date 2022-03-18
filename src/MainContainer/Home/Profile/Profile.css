@@ -1,16 +1,5 @@
 .background {
-    z-index: -1;
-    background-image: linear-gradient(180deg,
-            var(--rich-black-fog),
-            rgba(28, 54, 75, 0.973),
-            rgba(38, 116, 189, 0.658),
-            rgba(38, 116, 189, 0.658),
-            rgba(38, 116, 189, 0.658),
-            rgba(221, 231, 109, 0.363)),
-            url(../../../assets/Home/bg-abstract.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    
 }
 
 .colz .colz-icon i {
@@ -29,6 +18,7 @@
     text-align: center;
     justify-content: center;
     min-height: fit-content;
+    
 }
 
 .profile-parent {
@@ -77,20 +67,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
     border-radius: 50%;
     height: 380px;
     width: 380px;
     margin: 0 0px 0 100px;
     transition: 1s ease-in-out;
+    transform: none;
 }
 
 .profile-picture:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--maize-crayola);
-    border-radius: 50%;
+    border-radius: 10%;
     height: 380px;
     width: 380px;
     margin: 0 0px 0 100px;
@@ -109,11 +98,10 @@
 .profile-picture-background:hover {
     width: 92%;
     height: 92%;
-    background-image: url("../../../assets/Home/profile-photo-post.jpg");
     background-size: cover;
     border-radius: 50%;
-    transform: scale(1.05);
     transition: 1s ease-in-out;
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 1280px) {
@@ -136,11 +124,13 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     .profile-picture {
         height: 320px;
         width: 320px;
-        margin: 0 0 0 10px;
+        margin: 0 20px 0 0;
+    }
+    .profile-container{
     }
 }
 
@@ -152,9 +142,10 @@
     }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 900px) {
     .profile-picture {
         margin: 0 !important;
+        margin-bottom: 40px !important;
     }
     .profile-parent {
         flex-direction: column-reverse;
@@ -163,11 +154,27 @@
     }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 850px) {
     .profile-picture {
         margin: 0 !important;
+        height: 300px;
+        width: 300px;
+        margin-bottom: 40px !important;
+    }
+    .profile-parent {
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+        padding-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .profile-picture {
+        margin: 0 2rem 2rem 2rem !important;
         height: 200px;
         width: 200px;
+        ;
     }
     .profile-parent {
         flex-direction: column-reverse;
