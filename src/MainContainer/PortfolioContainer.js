@@ -7,7 +7,6 @@ export default function PortfolioContainer() {
       screen.component ? (
         <screen.component
           screenName={screen.screen_name}
-          key={screen.screen_name}
           id={screen.screen_name}
         />
       ) : (
@@ -16,5 +15,9 @@ export default function PortfolioContainer() {
     );
   };
 
-  return <div className="portfolio-container">{mapAllScreens()}</div>;
+  return(
+      <div className="portfolio-container">
+        {mapAllScreens()}
+      </div>
+    )
 }

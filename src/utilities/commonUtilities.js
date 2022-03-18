@@ -1,4 +1,4 @@
-import Profile from "../MainContainer/Home/Profile/Profile";
+import Home from "../MainContainer/Home/Home";
 import Projects from "../MainContainer/Projects/Projects";
 import AboutMe from "../MainContainer/AboutMe/AboutMe";
 import ContactMe from "../MainContainer/ContactMe/ContactMe";
@@ -7,7 +7,7 @@ import Footer from "../MainContainer/Footer/Footer";
 export const TOTAL_SCREENS = [
   {
     screen_name: "Profile",
-    component: Profile,
+    component: Home,
   },
   {
     screen_name: "About Me",
