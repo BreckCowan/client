@@ -13,10 +13,10 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: "description",
+    description: "A bit about me",
     highlights: {
       bullets: [
-        "bullets",
+        "Front End Developer",
         "bullets",
         "bullets",
         "bullets",

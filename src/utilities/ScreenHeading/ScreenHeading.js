@@ -4,7 +4,7 @@ import "./ScreenHeading.css";
 export default function ScreenHeading(props) {
   return (
     <div className="heading-container">
-      <div className="screen_heading">
+      <div className="screen-heading">
         <span>{props.title}</span>
       </div>
 
@@ -16,10 +16,9 @@ export default function ScreenHeading(props) {
         <div></div>
       )}
       <div className="heading-seperator">
-        <div className="seperator-line">
+        <div className="seperator-line"></div>
           <div className="seperator-dot">
             <div></div>
-          </div>
         </div>
       </div>
     </div>

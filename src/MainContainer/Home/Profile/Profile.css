@@ -77,7 +77,7 @@
     margin: 0 0px 0 100px;
     transition: 1s ease-in-out;
     transform: none;
-    background-image: url(../../../assets/Home/bg.jpg);
+    background-color: var(--rich-black-fog);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: repeat;
