@@ -1,12 +1,11 @@
 import Home from "../MainContainer/Home/Home";
-import Projects from "../MainContainer/Projects/Projects";
 import AboutMe from "../MainContainer/AboutMe/AboutMe";
+import Projects from "../MainContainer/Projects/Projects";
 import ContactMe from "../MainContainer/ContactMe/ContactMe";
-import Footer from "../MainContainer/Footer/Footer";
 
 export const TOTAL_SCREENS = [
   {
-    screen_name: "Profile",
+    screen_name: "Home",
     component: Home,
   },
   {
@@ -20,10 +19,6 @@ export const TOTAL_SCREENS = [
   {
     screen_name: "Contact Me",
     component: ContactMe,
-  },
-  {
-    screen_name: "Footer",
-    component: Footer,
   },
 ];
 

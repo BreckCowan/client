@@ -22,13 +22,13 @@ export default function Header() {
     ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
 
   const getHeaderOptions = () => {
-    return TOTAL_SCREENS.map((Screen, i) => (
+    return TOTAL_SCREENS.map((screen, i) => (
       <div
-        key={Screen.screen_name}
+        key={screen.screen_name}
         className={getHeaderOptionsClasses(i)}
-        onClick={() => switchScreen(i, Screen)}
+        onClick={() => switchScreen(i, screen)}
       >
-        <span>{Screen.screen_name}</span>
+        <span>{screen.screen_name}</span>
       </div>
     ));
   };
@@ -74,7 +74,7 @@ export default function Header() {
         </div>
         <div
           className={
-            showHeaderOptions
+            (showHeaderOptions)
               ? "header-options show-hamburger-options"
               : "header-options"
           }

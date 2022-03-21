@@ -30,6 +30,7 @@
 .profile-details-name {
     font-size: 24px;
     font-family: "Poppins SemiBold";
+    
 }
 
 .profile-details-role {
@@ -41,7 +42,10 @@
 .profile-details-role h1 {
     font-size: 24px;
     font-family: Ubuntu;
+    animation-duration: 1s;
+    display: block;
 }
+
 
 .primary-text {
     color: var(--white);
@@ -73,26 +77,34 @@
     margin: 0 0px 0 100px;
     transition: 1s ease-in-out;
     transform: none;
+    background-image: url(../../../assets/Home/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: repeat;
 }
 
 .profile-picture:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10%;
+    border-radius: 50%;
     height: 380px;
     width: 380px;
     margin: 0 0px 0 100px;
-    transition: 1s ease-in-out;
+    /* transform: rotate(360deg); */
+    
 }
 
 .profile-picture-background {
     width: 92%;
     height: 92%;
-    background-image: url("../../../assets/Home/profile-photo-post.jpg");
+    padding: 8%;
+    background-image: url(../../../assets/Home/profile-photo-post.jpg);
     background-size: cover;
     border-radius: 50%;
     transition: 1s ease-in-out;
+    z-index: 9000;
+    /* transition: transform .7s ease-in-out; */
 }
 
 .profile-picture-background:hover {
@@ -101,12 +113,14 @@
     background-size: cover;
     border-radius: 50%;
     transition: 1s ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1.02);
+    /* transform: rotate(-360deg); */
+    padding: 8%;
 }
 
 @media screen and (max-width: 1280px) {
     .profile-picture{
-        margin: 0 0 0 80px;
+        margin: 0 0 0 100px;
     }
     
     .profile-details-name {
@@ -128,17 +142,25 @@
     .profile-picture {
         height: 320px;
         width: 320px;
-        margin: 0 20px 0 0;
+        margin: 0 0px 0 100px;
     }
-    .profile-container{
+    .profile-picture:hover {
+        height: 280px;
+        width: 280px;
+        margin: 0 10px 0 20px;
     }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 975px) {
     .profile-picture {
-        height: 300px;
-        width: 300px;
-        margin: 0 0 0 4px;
+        height: 280px;
+        width: 280px;
+        margin: 0 10px 0 20px;
+    }
+    .profile-picture:hover {
+        height: 280px;
+        width: 280px;
+        margin: 0 10px 0 20px;
     }
 }
 
@@ -149,7 +171,7 @@
     }
     .profile-parent {
         flex-direction: column-reverse;
-        margin: 40px 0 0 0;
+        margin: 20px 0 0 0;
         padding-bottom: 20px;
     }
 }
@@ -157,8 +179,6 @@
 @media screen and (max-width: 850px) {
     .profile-picture {
         margin: 0 !important;
-        height: 300px;
-        width: 300px;
         margin-bottom: 40px !important;
     }
     .profile-parent {
