@@ -13,19 +13,18 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: "A bit about me",
+    description:
+      "In 2020, I began studying web development with the intention of transitioning my career path to the technology sector.  I spent most of my professional life in the food and beverage industry, from a bus boy up to managing my own bar programs but feel that I am ready for a new chapter in my life.  I have always been one to take on challenges, seek solutions, and gain knowledge in the process.  Teamwork, client satisfaction, and a positive attitude are skills that I carry into any role that I take on.  I look forward to joining a team of developers to expand on the knowledge that I have gained on my own and continue growing my skills everyday as a web developer.",
     highlights: {
       bullets: [
-        "Front End Developer",
-        "bullets",
-        "bullets",
-        "bullets",
-        "bullets",
-        "bullets",
-        "bullets",
-        "bullets",
+        "Full Stack Web Developer",
+        "Building responsive and visually pleasing UX/UI sites",
+        "React and React Native",
+        "Redux for State Management",
+        "Building REST API",
+        "Managing database",
       ],
-      heading: "heading",
+      heading: "Summary : ",
     },
   };
   const renderHighlight = () => {
@@ -40,31 +39,31 @@ export default function AboutMe(props) {
   return (
     <div className="about-me-container screen container" id={props.id || ""}>
       <div className="about-me-parent">
-        <ScreenHeading title={"About Me"} subHeading={"About Me"} />
+        <ScreenHeading title={"About Me"} subHeading={"A Brief History of Me"} />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">
             <span className="about-me-description">
               {SCREEN_CONSTANTS.description}
             </span>
-          </div>
           <div className="about-me-highlights">
             <div className="highlight-heading">
               <span>{SCREEN_CONSTANTS.highlights.heading}</span>
             </div>
-            {renderHighlight()}
           </div>
-          <div className="about-me-options">
-            <button
-              className="btn primary-btn"
-              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-            >
-              {" "}
-              Hire me{" "}
-            </button>
-            <a href="Breck-Cowan.pdf" download="Breck-Cowan.pdf">
-              <button className="btn highlighted-btn"> Get Resume </button>
-            </a>
+            {renderHighlight()}
+            <div className="about-me-options">
+              <button
+                className="btn primary-btn"
+                onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+              >
+                {" "}
+                Hire me{" "}
+              </button>
+              <a href="Breck-Cowan.pdf" download="Breck-Cowan.pdf">
+                <button className="btn highlighted-btn"> Get Resume </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
