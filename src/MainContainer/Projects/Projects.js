@@ -1,13 +1,26 @@
-import './Projects.css'
-import React from 'react'
+import React from "react";
+import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
+import ScrollService from "../../utilities/ScrollService";
+import Animation from "../../utilities/Animations";
+import "./Projects.css";
 
-export default function Projects() {
+export default function Projects(props) {
+
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeScreen !== props.id) return;
+    Animation.animation.fadeInScreen(props.id);
+  };
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
   return (
-    <div class="main-container">
-      {/* Project section begins */}
 
+<div className="projects-container screen container" id={props.id || ""}>
+
+    <div class="projects-parent">
+      {/* Project section begins */}
+      <ScreenHeading title={"Projects"} subHeading={"What have you been working on?"} />
       <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">These are some of my projects</h2>
 
         <div class="projects-grid">
           <a
@@ -63,11 +76,7 @@ export default function Projects() {
             target="_blank"
             class="project project-tile"
           >
-            <img
-              class="project-image"
-              src="#"
-              alt="project"
-            />
+            <img class="project-image" src="#" alt="project" />
             <p class="project-title">
               <span class="code">&lt;</span>
               Company Landing Page
@@ -90,9 +99,7 @@ export default function Projects() {
       </section>
 
       {/* END PROJECTS SECTION */}
-
-      
     </div>
+</div>
   );
 }
-

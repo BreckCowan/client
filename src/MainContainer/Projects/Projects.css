@@ -1,5 +1,9 @@
 /* Projects section */
 
+.projects-parent {
+  margin-top: 4rem;
+}
+
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
