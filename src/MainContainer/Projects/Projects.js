@@ -18,14 +18,13 @@ export default function Projects(props) {
 <div className="projects-container screen container" id={props.id || ""}>
 
     <div class="projects-parent">
-      {/* Project section begins */}
       <ScreenHeading title={"Projects"} subHeading={"What have you been working on?"} />
       <section id="projects" class="projects-section">
 
         <div class="projects-grid">
           <a
             href="https://codepen.io/BreckCowan/details/ZEaXveO"
-            target="_blank"
+            // target="_blank"
             class="project project-tile"
           >
             <img class="project-image" src="#" alt="project" />
@@ -37,7 +36,7 @@ export default function Projects(props) {
           </a>
           <a
             href="https://codepen.io/BreckCowan/details/qBVVZXL"
-            target="_blank"
+            // target="_blank"
             class="project project-tile"
           >
             <img class="project-image" src="#" alt="project" />
@@ -49,7 +48,7 @@ export default function Projects(props) {
           </a>
           <a
             href="https://codepen.io/BreckCowan/details/YzEaPwq"
-            target="_blank"
+            // target="_blank"
             class="project project-tile"
           >
             <img class="project-image" src="#" alt="project" />
@@ -61,7 +60,7 @@ export default function Projects(props) {
           </a>
           <a
             href="https://codepen.io/BreckCowan/details/MWOXRpO"
-            target="_blank"
+            // target="_blank"
             class="project project-tile"
           >
             <img class="project-image" src="#" alt="project" />
@@ -73,7 +72,7 @@ export default function Projects(props) {
           </a>
           <a
             href="https://codepen.io/BreckCowan/details/MWOXRpO"
-            target="_blank"
+            // target="_blank"
             class="project project-tile"
           >
             <img class="project-image" src="#" alt="project" />
@@ -85,7 +84,7 @@ export default function Projects(props) {
           </a>
           <a
             href="https://codepen.io/BreckCowan/details/mdqKgXJ"
-            target="_blank"
+            // target="_blank"
             class="project project-tile"
           >
             <img class="project-image" src="#" alt="project" />
@@ -97,8 +96,6 @@ export default function Projects(props) {
           </a>
         </div>
       </section>
-
-      {/* END PROJECTS SECTION */}
     </div>
 </div>
   );
