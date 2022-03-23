@@ -14,89 +14,93 @@ export default function Projects(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   return (
-
-<div className="projects-container screen container" id={props.id || ""}>
-
-    <div class="projects-parent">
-      <ScreenHeading title={"Projects"} subHeading={"What have you been working on?"} />
-      <section id="projects" class="projects-section">
-
-        <div class="projects-grid">
-          <a
-            href="https://codepen.io/BreckCowan/details/ZEaXveO"
-            // target="_blank"
-            class="project project-tile"
-          >
-            <img class="project-image" src="#" alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Tribute Page
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://codepen.io/BreckCowan/details/qBVVZXL"
-            // target="_blank"
-            class="project project-tile"
-          >
-            <img class="project-image" src="#" alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Survey Form
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://codepen.io/BreckCowan/details/YzEaPwq"
-            // target="_blank"
-            class="project project-tile"
-          >
-            <img class="project-image" src="#" alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Technical Document
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://codepen.io/BreckCowan/details/MWOXRpO"
-            // target="_blank"
-            class="project project-tile"
-          >
-            <img class="project-image" src="#" alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Javascript Calculator
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://codepen.io/BreckCowan/details/MWOXRpO"
-            // target="_blank"
-            class="project project-tile"
-          >
-            <img class="project-image" src="#" alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Company Landing Page
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://codepen.io/BreckCowan/details/mdqKgXJ"
-            // target="_blank"
-            class="project project-tile"
-          >
-            <img class="project-image" src="#" alt="project" />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Weather App
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-        </div>
-      </section>
+    <div className="projects-container screen container" id={props.id || ""}>
+      <ScreenHeading
+        title={"Projects"}
+        subHeading={"What have you been working on?"}
+      />
+      <div class="projects-parent">
+        <section id="projects" class="projects-section">
+          <div class="projects-grid">
+            <a
+              href="https://codepen.io/BreckCowan/details/ZEaXveO"
+              // target="_blank"
+              class="project project-tile"
+            >
+              <img class="project-image" src="#" alt="project" />
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Tribute Page
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://codepen.io/BreckCowan/details/qBVVZXL"
+              // target="_blank"
+              class="project project-tile"
+            >
+              <img class="project-image" src="#" alt="project" />
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Survey Form
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://codepen.io/BreckCowan/details/YzEaPwq"
+              // target="_blank"
+              class="project project-tile"
+            >
+              <img class="project-image" src="#" alt="project" />
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Technical Document
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://codepen.io/BreckCowan/details/MWOXRpO"
+              // target="_blank"
+              class="project project-tile"
+            >
+              <img
+                class="project-image"
+                src="url(../../assets/Projects/calculator.png)"
+                alt="project"
+              />
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Javascript Calculator
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://codepen.io/BreckCowan/details/MWOXRpO"
+              // target="_blank"
+              class="project project-tile"
+            >
+              <img class="project-image" src="#" alt="project" />
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Company Landing Page
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </a>
+            <a
+              href="https://codepen.io/BreckCowan/details/mdqKgXJ"
+              // target="_blank"
+              class="project project-tile"
+            >
+              <img class="project-image" src="#" alt="project" />
+              <p class="project-title">
+                <span class="code">&lt;</span>
+                Weather App
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
-</div>
   );
 }

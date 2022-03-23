@@ -3,6 +3,8 @@
     flex-flow: row nowrap;
     justify-content:center;
     align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .about-me-parent {

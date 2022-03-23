@@ -1,18 +1,95 @@
-import React from "react";
+import React, { useRef } from "react";
+import env from "react-dotenv";
+import emailjs from "@emailjs/browser";
+import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
+import ScrollService from "../../utilities/ScrollService";
+import Animation from "../../utilities/Animations";
 import "./ContactMe.css";
 
+export default function ContactMe(props) {
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeScreen !== props.id) return;
+    Animation.animation.fadeInScreen(props.id);
+  };
+  const fadeInSubscription =
+    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-export default function ContactMe() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        env.SERVICE,
+        env.TEMPLATE,
+        form.current,
+        env.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div>
-      <h1>ContactMe</h1>
+    <div className="contact-me-container screen container" id={props.id || ""}>
+      <div className="contact-me-parent">
+        <ScreenHeading
+          title={"Contact Me"}
+          subHeading={"We should keep in touch"}
+        />
+        <div className="contact-me-card">
+        <div className="thank-you">
+          <p>Thank your for taking the time to visit my site!  I look forward to hearing from you and would love to work on amazing sites with you in the future. <br />  Have a great day! Cheers!</p>
+        </div>
 
-      <p>
-        Thank your for taking the time to visit my site! If you would like to
-        contact me, please send me an email below. I look forward to meeting and
-        hope to create some beautiful sites for you!
-      </p>
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="form-group">
+              <div className="name-control">
+                <label>Name</label>
+                <input
+                  className="form-control"
+                  placeholder="Your name"
+                  id="name"
+                  type="text"
+                  name="from_name"
+                />
+              </div>
 
+              <div className="email-control">
+                <label>Email</label>
+                <input
+                  placeholder="YourEmail@domain.com"
+                  className="form-control"
+                  id="email"
+                  type="email"
+                  name="user_email"
+                />
+              </div>
+
+              <div className="message-control">
+                <label>Message</label>
+                <textarea
+                  className="form-control"
+                  placeholder="Write your message here..."
+                  name="message"
+                  rows="4"
+                  cols="50"
+                />
+              </div>
+
+                <input className="form-control message-submit" type="submit" value="Send message" />
+
+            </div>
+          </form>
+        </div>
+
+        {/* 
       <form>
         <div className="form-group">
           <label htmlFor="exampleFormControlInput1">Email address</label>
@@ -63,7 +140,8 @@ export default function ContactMe() {
         <div className="form-control">
           <button method="submit" type="submit">Send</button>
         </div>
-      </form>
+      </form> */}
+      </div>
     </div>
   );
 }
