@@ -4,6 +4,8 @@ import ScrollService from "../../utilities/ScrollService";
 import Animation from "../../utilities/Animations";
 import "./Projects.css";
 
+import calculator from './images/calculator.png';
+
 export default function Projects(props) {
 
   let fadeInScreenHandler = (screen) => {
@@ -65,8 +67,8 @@ export default function Projects(props) {
             >
               <img
                 class="project-image"
-                src="url(../../assets/Projects/calculator.png)"
-                alt="project"
+                src={calculator}
+                alt="calculator"
               />
               <p class="project-title">
                 <span class="code">&lt;</span>

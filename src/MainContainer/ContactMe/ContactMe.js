@@ -21,10 +21,10 @@ export default function ContactMe(props) {
 
     emailjs
       .sendForm(
-        env.SERVICE,
-        env.TEMPLATE,
+        window.env.SERVICE,
+        window.env.TEMPLATE,
         form.current,
-        env.USER_ID
+        window.env.USER_ID
       )
       .then(
         (result) => {
@@ -77,6 +77,7 @@ export default function ContactMe(props) {
                 <textarea
                   className="form-control"
                   placeholder="Write your message here..."
+                  id="message"
                   name="message"
                   rows="4"
                   cols="50"
