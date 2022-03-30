@@ -1,0 +1,112 @@
+.resume-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.resume-parent {
+  max-width: 1200px;
+  width: 90%;
+}
+
+.resume-elements {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 20px -2px black;
+}
+
+.left-sidebar {
+  width: 30%;
+  height: auto;
+  background-color: var(--maize-crayola);
+  text-align: center;
+  border-right: 1px solid var(--rich-black-fog);
+}
+
+.right-sidebar {
+  width: 80%;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  /* border-left: 1px solid var(--rich-black-fog); */
+}
+.right-sidebar h3 {
+  padding: 5px 5px 5px 5px;
+}
+
+.profile {
+  margin-top: 15px;
+}
+
+.technical {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.technical h5 {
+  text-decoration: underline;
+  color: var(--maize-crayola);
+}
+
+.work-heading {
+  text-decoration: underline;
+  color: var(--maize-crayola);
+}
+
+.work-details a {
+  color: var(--maize-crayola)
+}
+
+.school-name {
+  text-decoration: underline;
+  color: var(--maize-crayola);
+
+}
+
+.certifications a {
+  color: var(--maize-crayola)
+}
+
+.certifications img {
+  width: 30px;
+  height: 30px;
+}
+
+.certifications img:hover + .hide {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.hide {
+  display:none;
+}
+
+@media only screen and (max-width: 995px) {
+  .resume-elements {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-sidebar {
+    width: 100%;
+    border: none;
+  }
+  .right-sidebar {
+    text-align: center;
+    margin: none;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .technical-skill-container {
+    display: none;
+  }
+}
+
