@@ -88,6 +88,24 @@
   display:none;
 }
 
+.col .col-icon i {
+  color:var(--maize-crayola);
+  padding: 1rem;
+  padding-left: 1rem;
+}
+
+.col .col-icon i:hover {
+  color: white;
+  padding: 1rem;
+  padding-left: 1rem;
+}
+
+.col {
+  background-color: black;
+  margin: none;
+  padding: none;
+}
+
 @media only screen and (max-width: 995px) {
   .resume-elements {
     display: flex;
@@ -105,8 +123,28 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .technical-skill-container {
+  #technical-skills .version-control {
     display: none;
   }
+  #technical-skills .operating-systems {
+    display: none;
+  }
+  
 }
 
+#resume-email {
+  color: black;
+}
+
+#resume-email:hover {
+  color: white;
+}
+
+#name-plate {
+  font-weight: bold;
+}
+
+.right-sidebar h3 {
+  font-weight: bold;
+  color: black;
+}

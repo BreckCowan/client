@@ -5,6 +5,8 @@ import Animation from "../../utilities/Animations";
 import "./Projects.css";
 
 import calculator from './images/calculator.png';
+import survey from './images/survey.png';
+import umbrella from './images/umbrella.png';
 
 export default function Projects(props) {
 
@@ -41,7 +43,7 @@ export default function Projects(props) {
               // target="_blank"
               class="project project-tile"
             >
-              <img class="project-image" src="#" alt="project" />
+              <img class="project-image" src={survey} alt="project" />
               <p class="project-title">
                 <span class="code">&lt;</span>
                 Survey Form
@@ -81,7 +83,7 @@ export default function Projects(props) {
               // target="_blank"
               class="project project-tile"
             >
-              <img class="project-image" src="#" alt="project" />
+              <img class="project-image" src={umbrella} alt="project" />
               <p class="project-title">
                 <span class="code">&lt;</span>
                 Company Landing Page
