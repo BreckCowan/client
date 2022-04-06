@@ -53,6 +53,22 @@ export default function Resume(props) {
                     </a>
                   </div>
                 </div>
+
+                <div className="interests">
+                <h3>Interests</h3>
+
+                  <h5>Wine and Dine</h5>
+                  <p>While I enjoy cooking, going out for a nice dinner and having a fine meal is something that I find hard to decline</p>
+                    <h5>Working Out</h5>
+                      <p>In my spare time, I like to work out and try to grow stronger and healthier</p>
+                    <h5>Photography</h5>
+                      <p>Being a student of film, I have always had an interest in photography and the stories that composition and light can tell</p>
+                    <h5>Live Music</h5>
+                      <p>I love to listen to music but absolutely love live proformances by artists how put their heart and soul into entertaining an audience</p>
+                    <h5>Video Games</h5>
+                      <p>Playing a game with a rich story, incredible graphics, and an amazing soundtrack will always be one of my favorite ways to unwind</p>
+                </div>
+                  
               </div>
             </section>
           </div>

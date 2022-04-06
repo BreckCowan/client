@@ -18,8 +18,8 @@ export default function AboutMe(props) {
     highlights: {
       bullets: [
         "Full Stack Web Developer",
-        "Building responsive and visually pleasing UX/UI sites",
-        "React and React Native",
+        "Responsive Web Design",
+        "React Dev",
         "Redux for State Management",
         "Building REST API",
         "Managing database",

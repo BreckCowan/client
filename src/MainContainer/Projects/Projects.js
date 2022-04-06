@@ -5,8 +5,11 @@ import Animation from "../../utilities/Animations";
 import "./Projects.css";
 
 import calculator from './images/calculator.png';
-import survey from './images/survey.png';
-import umbrella from './images/umbrella.png';
+import survey from './images/survey.jpg';
+import tribute from './images/tribute.jpg';
+import technical from './images/technical.jpg';
+import weather from './images/weather.jpg';
+import landing from './images/landing.png';
 
 export default function Projects(props) {
 
@@ -31,7 +34,7 @@ export default function Projects(props) {
               // target="_blank"
               class="project project-tile"
             >
-              <img class="project-image" src="#" alt="project" />
+              <img class="project-image" src={tribute} alt="project" />
               <p class="project-title">
                 <span class="code">&lt;</span>
                 Tribute Page
@@ -55,7 +58,7 @@ export default function Projects(props) {
               // target="_blank"
               class="project project-tile"
             >
-              <img class="project-image" src="#" alt="project" />
+              <img class="project-image" src={technical} alt="project" />
               <p class="project-title">
                 <span class="code">&lt;</span>
                 Technical Document
@@ -83,7 +86,7 @@ export default function Projects(props) {
               // target="_blank"
               class="project project-tile"
             >
-              <img class="project-image" src={umbrella} alt="project" />
+              <img class="project-image" src={landing} alt="project" />
               <p class="project-title">
                 <span class="code">&lt;</span>
                 Company Landing Page
@@ -95,7 +98,7 @@ export default function Projects(props) {
               // target="_blank"
               class="project project-tile"
             >
-              <img class="project-image" src="#" alt="project" />
+              <img class="project-image" src={weather} alt="project" />
               <p class="project-title">
                 <span class="code">&lt;</span>
                 Weather App
